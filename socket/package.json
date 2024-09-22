@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "estate-main": "file:.."
+  }
+}
