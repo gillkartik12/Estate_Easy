@@ -14,6 +14,10 @@ function Navbar() {
 
   if(currentUser) fetch();
 
+  const handleImageClick = () => {
+    window.location.pathname = "/profile";
+  }
+
   return (
     <nav>
       <div className="left">
@@ -29,7 +33,7 @@ function Navbar() {
       <div className="right">
         {currentUser ? (
           <div className="user">
-            <img src={currentUser.avatar || "/noavatar.jpg"} alt="" />
+            <img src={currentUser.avatar || "/noavatar.jpg"} alt="" onClick={handleImageClick} />            
             <span>{currentUser.username}</span>
             <Link to="/profile" className="profile">
               {number > 0 && <div className="notification">{number}</div>}
@@ -56,8 +60,8 @@ function Navbar() {
           <a href="/">About</a>
           <a href="/">Contact</a>
           <a href="/">Agents</a>
-          <a href="/">Sign in</a>
-          <a href="/">Sign up</a>
+          <a href="/login">Sign in</a>
+          <a href="/register">Sign up</a>
         </div>
       </div>
     </nav>

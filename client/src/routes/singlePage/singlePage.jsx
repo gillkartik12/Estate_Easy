@@ -143,7 +143,7 @@ function SinglePage() {
               <img src="/chat.png" alt="" />
               Send a Message
             </button>
-            <button
+            {/* <button
               onClick={handleSave}
               style={{
                 backgroundColor: saved ? "#fece51" : "white",
@@ -151,7 +151,7 @@ function SinglePage() {
             >
               <img src="/save.png" alt="" />
               {saved ? "Place Saved" : "Save the Place"}
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

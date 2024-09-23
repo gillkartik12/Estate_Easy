@@ -1,7 +1,4 @@
-//import prisma from "../lib/prisma.js";
-import { PrismaClient } from "../prisma/generated/client/default.js";
-
-const prisma = new PrismaClient();
+import prisma from "../lib/prisma.js";
 
 export const addMessage = async (req, res) => {
   const tokenUserId = req.userId;

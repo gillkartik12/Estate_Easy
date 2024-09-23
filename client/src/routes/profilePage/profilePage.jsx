@@ -59,7 +59,7 @@ function ProfilePage() {
               {(postResponse) => <List posts={postResponse.data.userPosts} />}
             </Await>
           </Suspense>
-          <div className="title">
+          {/* <div className="title">
             <h1>Saved List</h1>
           </div>
           <Suspense fallback={<p>Loading...</p>}>
@@ -69,7 +69,7 @@ function ProfilePage() {
             >
               {(postResponse) => <List posts={postResponse.data.savedPosts} />}
             </Await>
-          </Suspense>
+          </Suspense> */}
         </div>
       </div>
       <div className="chatContainer">

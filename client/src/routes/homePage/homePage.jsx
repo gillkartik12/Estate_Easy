@@ -8,15 +8,13 @@ function HomePage() {
   const {currentUser} = useContext(AuthContext)
 
   return (
-    <div className="homePage">
+    <div className="homePage" style={{mt: {lg: '212px', xs:'70px'},
+    ml: {sm: '50px'}}}>
       <div className="textContainer">
         <div className="wrapper">
           <h1 className="title">Find Real Estate & Get Your Dream Place</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-            explicabo suscipit cum eius, iure est nulla animi consequatur
-            facilis id pariatur fugit quos laudantium temporibus dolor ea
-            repellat provident impedit!
+          Discover the perfect home or investment opportunity with our comprehensive real estate services. Whether you’re searching for a cozy apartment, a spacious family home, or a lucrative commercial property, we’re here to help you every step of the way.
           </p>
           <SearchBar />
           <div className="boxes">

@@ -1,3 +1,5 @@
+@import "../../responsive.scss";
+
 .newPostPage {
   height: 100%;
   display: flex;
@@ -21,13 +23,14 @@
           flex-direction: column;
           gap: 5px;
 
-          label {
-          }
-
           input {
             padding: 20px;
             border-radius: 5px;
             border: 1px solid gray;
+            @include sm {
+              width:120px;
+              height:30px;
+            }
           }
 
           select {
@@ -41,6 +44,10 @@
             .quill > .ql-container > .ql-editor{
               height: 200px;
               font-size: 16px;
+              position: relative;
+              @include sm {
+                display: inline;
+              }
             }
           }
         }
@@ -52,6 +59,10 @@
           color: white;
           font-weight: bold;
           cursor: pointer;
+
+          @include sm {
+            height: 40px;
+           }
         }
       }
     }
@@ -65,12 +76,26 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
-
+    @include sm {
+      position: absolute; /* Use absolute positioning */
+      bottom: 0; /* Position it at the bottom */
+      left:1; /* Align to the left */
+      right: 1; /* Stretch to full width */
+      margin-top: 10px;
+      margin-bottom: 20px; /* Remove any top margin */
+      background: white; /* Optional background for visibility */
+      padding: 5px; /* Some padding */
+      padding-bottom: 10px;
+      height:"10px";
+    }
     img {
       width: 50%;
       height: 180px;
       object-fit: cover;
       border-radius: 5px;
+      @include sm {
+       display: none;
+      }
     }
   }
 }
