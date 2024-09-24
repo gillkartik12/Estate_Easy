@@ -16,6 +16,12 @@ nav {
     &:hover {
       scale: 1.05;
     }
+    button{
+      padding: 10px 22px;
+      background-color: #fece51;
+      cursor: pointer;
+      border: none;
+    }
   }
 
   .left {

@@ -23,12 +23,16 @@ function Navbar() {
       <div className="left">
         <a href="/" className="logo">
           <img src="/logo.png" alt="" />
-          <span>KartikEstate</span>
+          <span>EstateEase</span>
         </a>
         <a href="/">Home</a>
-        <a href="/">About</a>
-        <a href="/">Contact</a>
-        <a href="/">Agents</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        {currentUser ? (<Link to="/add">
+              <button >Post</button>
+        </Link>) : (<Link to="/login">
+              <button >Post</button>
+        </Link>)}
       </div>
       <div className="right">
         {currentUser ? (
@@ -57,11 +61,11 @@ function Navbar() {
         </div>
         <div className={open ? "menu active" : "menu"}>
           <a href="/">Home</a>
-          <a href="/">About</a>
-          <a href="/">Contact</a>
-          <a href="/">Agents</a>
-          <a href="/login">Sign in</a>
-          <a href="/register">Sign up</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+          {currentUser ? <a href="/profile">Sign in</a> : <a href="/login">Sign in</a>}
+          {!currentUser && <a href="/register">Sign up</a>}
+          
         </div>
       </div>
     </nav>

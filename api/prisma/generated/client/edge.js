@@ -183,7 +183,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Users\\gillk\\Downloads\\Estate_Real-5b7a0b74d8b8b7caf5cbd0b1e8d5146f24e96774\\Estate_Real-5b7a0b\\api\\prisma\\generated\\client",
+      "value": "C:\\code\\MERN\\Estate_Real\\api\\prisma\\generated\\client",
       "fromEnvVar": null
     },
     "config": {
@@ -197,7 +197,7 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "C:\\Users\\gillk\\Downloads\\Estate_Real-5b7a0b74d8b8b7caf5cbd0b1e8d5146f24e96774\\Estate_Real-5b7a0b\\api\\prisma\\schema.prisma",
+    "sourceFilePath": "C:\\code\\MERN\\Estate_Real\\api\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {

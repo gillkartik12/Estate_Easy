@@ -39,6 +39,12 @@
           background-color: #fece51;
           cursor: pointer;
           border: none;
+          @include lg {
+            display: none;
+          }
+          @include sm {
+            display:block;
+          }
         }
       }
 

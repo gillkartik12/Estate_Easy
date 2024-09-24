@@ -3,6 +3,7 @@
 .homePage {
   display: flex;
   height: 100%;
+  overflow: auto;
 
   .textContainer {
     flex: 3;
@@ -47,7 +48,7 @@
         }
 
         h1 {
-          font-size: 36px;
+          font-size: 28px;
 
           @include lg {
             font-size: 32px;
