@@ -5,10 +5,10 @@
   height: 100%;
   overflow: auto;
 
-//   max-width: 600px;
-//   margin: auto;
-//   padding: 20px;
-   //flex-direction: column;
+  //   max-width: 600px;
+  //   margin: auto;
+  //   padding: 20px;
+  //flex-direction: column;
 
   .textContainer {
     flex: 3;
@@ -48,8 +48,10 @@
         display: flex;
         justify-content: space-between;
 
-        @include sm {
-           display: none;
+        .box3 {
+          @include sm {
+            display: none;
+          }
         }
 
         h1 {
@@ -68,10 +70,10 @@
 
       form {
         flex: 3;
-    height: 100%;
-    display: flex;
-    align-items: left;
-    justify-content: left;
+        height: 100%;
+        display: flex;
+        align-items: left;
+        justify-content: left;
 
         .input-box {
           //display: flex;
@@ -103,7 +105,7 @@
             color: white;
             font-weight: bold;
             cursor: pointer;
-    
+
             &:disabled {
               background-color: #bed9d8;
               cursor: not-allowed;
@@ -120,18 +122,18 @@
   .imgContainer {
     flex: 2;
     background-color: #fcf5f3;
-    position: relative;
+    //position: relative;
     display: flex;
     align-items: right;
 
-    @include md {
-      display: none;
-    }
+    // @include md {
+    //   display: none;
+    // }
 
     img {
       width: 115%;
-      position: absolute;
-      right: 0;
+      // position: absolute;
+      // right: 0;
 
       @include lg {
         width: 105%;

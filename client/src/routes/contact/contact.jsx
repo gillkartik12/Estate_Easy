@@ -66,15 +66,15 @@ function Contact() {
             </div>
           </form>
           <div className="boxes">
-            <div className="box">
+            <div className="box1">
               <h1>10+</h1>
               <h2>Years of Experience</h2>
             </div>
-            <div className="box">
+            <div className="box2">
               <h1>200</h1>
-              <h2>Award Gained</h2>
+              <h2>Awards Gained</h2>
             </div>
-            <div className="box">
+            <div className="box3">
               <h1>2000+</h1>
               <h2>Property Ready</h2>
             </div>

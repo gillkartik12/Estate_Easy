@@ -4,7 +4,8 @@
   display: flex;
   height: 100%;
   overflow: auto;
-
+  
+  
   .textContainer {
     flex: 3;
 
@@ -16,6 +17,12 @@
       gap: 50px;
       height: 100%;
 
+      p{
+        @include sm{
+          font-size: 12px;
+        }
+      }
+
       @include lg{
         padding-right: 50px;
       }
@@ -26,6 +33,7 @@
 
       @include sm{
         justify-content: flex-start;
+        gap: 20px;
       }
 
       .title {

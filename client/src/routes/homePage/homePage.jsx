@@ -25,7 +25,7 @@ function HomePage() {
             </div>
             <div className="box">
               <h1>200</h1>
-              <h2>Award Gained</h2>
+              <h2>Awards Gained</h2>
             </div>
             <div className="box">
               <h1>2000+</h1>

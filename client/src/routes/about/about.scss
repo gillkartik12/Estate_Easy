@@ -1,4 +1,5 @@
 @import "../../responsive.scss";
+@import "../../components/searchBar/SearchBar";
 
 .about {
   display:flex;
@@ -39,13 +40,19 @@
           font-size: 35px;
         }
       }
+      .search, .search-h3 {
+        @include sm{
+          display: none;
+        }
+      }
       
       .boxes {
         display: flex;
         justify-content: space-between;
-
-        @include sm {
-           display: none;
+        .box3, .box2 {
+          @include sm {
+            display: none;
+          }
         }
 
         h1 {
