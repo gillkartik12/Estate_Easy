@@ -1,4 +1,4 @@
-//import bcrypt from "bcryptjs";
+import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import prisma from "../lib/prisma.js";
 
@@ -8,7 +8,7 @@ export const register = async (req, res) => {
   try {
     // HASH THE PASSWORD
 
-    //const hashedPassword = await bcrypt.hash(password, 10);
+    const hashedPassword = await bcrypt.hash(password, 10);
 
 
     // CREATE A NEW USER AND SAVE TO DB
@@ -16,7 +16,7 @@ export const register = async (req, res) => {
       data: {
         username,
         email,
-        password //: hashedPassword,
+        password : hashedPassword,
       },
     });
 
@@ -43,10 +43,10 @@ export const login = async (req, res) => {
 
     // CHECK IF THE PASSWORD IS CORRECT
 
-    //const isPasswordValid = await bcrypt.compare(password, user.password);
+    const isPasswordValid = await bcrypt.compare(password, user.password);
 
-    // if (!isPasswordValid)
-    //   return res.status(400).json({ message: "Invalid Credentials!" });
+     if (!isPasswordValid)
+       return res.status(400).json({ message: "Invalid Credentials!" });
 
     // GENERATE COOKIE TOKEN AND SEND TO THE USER
 

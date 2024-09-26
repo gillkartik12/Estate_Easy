@@ -48,9 +48,14 @@
       .boxes {
         display: flex;
         justify-content: space-between;
-        .box3, .box2 {
+        .box3 {
           @include sm {
             display: none;
+          }
+        }
+        .box1, .box2 {
+          @include sm {
+            padding-bottom: 80px;
           }
         }
 
