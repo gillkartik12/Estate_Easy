@@ -1,8 +1,12 @@
+@import "../../responsive.scss";
+
 .chat {
   height: 100%;
   display: flex;
   flex-direction: column;
-
+  @include sm{
+    padding-bottom: 120px;
+  }
   .messages {
     flex: 1;
     display: flex;
